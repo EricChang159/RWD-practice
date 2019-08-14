@@ -27,12 +27,21 @@
                 <div class="PageStart-container">
                     <div class="pageone-header-bar">
                         <ul>
+                            <li class="head-logo"><a href='#'>BestChoice</a></li>
+                            <li class="no-show"><a href="#">Best PLan</a></li>
+                            <li class="no-show"><a href="#">About 675</a></li>
+                            <li class="no-show"><a href="#page-three">Gallery</a></li>
+                            <li class="no-show"><a href="#">Contact</a></li>
+                        </ul>
+                        <div class="header-icon"><a href="#">☰</a></div>
+                    </div>
+                    <div class="mobile-menu">
+                        <ul>
                             <li><a href="#">Best PLan</a></li>
                             <li><a href="#">About 675</a></li>
                             <li><a href="#page-three">Gallery</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-                        <div class="header-icon"><a href="#">☰</a></div>
                     </div>
                 <div class="PageStart-content-container">
                     <a href="#page-two" >
@@ -175,8 +184,16 @@
   <style>
   </style>
   <script>
-
-
+      $(function(){
+          $('.header-icon').on('click',function(e){
+              e.preventDefault();
+            $('.mobile-menu').toggle(300)
+          })
+            $('.mobile-menu').on('mouseleave',function(e){
+                $('.mobile-menu').hide(300)
+            })       
+      })
+// mouseout 未設置阻止冒泡的false 需要使用mouseleave才可以 兩者差在冒泡與否，事件綁定的層度不同
           
      
      

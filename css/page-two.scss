@@ -44,34 +44,35 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 110px;
     grid-template-rows: repeat(4, 1fr);
-    // padding-left:6%;
     div{
         margin:0;
         padding-right:15%;
         padding-left:6%;
     }
     .Date{
-        grid-column:1/2;
+        grid-column:1/3;
         padding-left:20px;
     }
     .Spot{
-        grid-column: 2/3;
-        // padding-right:37px;
+        position:relative;
+        right:28%;
+        grid-column: 3/4;
+        min-width: 110px;
     }
     .User{
-        grid-column: 1/3;
+        grid-column: 1/4;
         grid-row: 2/3;
         width:100%;
     }
     .Email{
-        grid-column: 1/3;
+        grid-column: 1/4;
         grid-row: 3/4;
         width:100%;
     }
     .btn{
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 4/5;
     }
 }
@@ -81,7 +82,7 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(5, 1fr);
         width:70%;
-        height:58vh;
+        height:70vh;
         margin:0 1.5%;
         bottom:5%;
         div{
@@ -97,6 +98,7 @@
             grid-column: 1/3;
             grid-row: 2/3;
             width:100%;
+            position: static;
         }
         .User{
             grid-row: 3/4;
@@ -110,9 +112,11 @@
             grid-column: 2/3;
             grid-row: 5/6;
         }
-        .content{
-            font-size:30px;
-        }
+        
+    }
+    .content{
+        font-size:30px;
+        padding-top:50px;
     }
 }
 
