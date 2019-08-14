@@ -1,0 +1,164 @@
+.page-two-container {
+  width: 94vw;
+  height: 110vh;
+  background: url("../image/manage-trip.jpeg");
+  background-size: cover;
+  background-position: 70% 20%;
+}
+
+.manage-plan {
+  position: relative;
+  bottom: 10px;
+  top: 10px;
+  left: 5%;
+  border: 5px solid orangered;
+  padding: 25px;
+  width: 325px;
+  height: 375px;
+  background: black;
+  opacity: .5;
+}
+
+.manage-plan input {
+  display: block;
+  width: 80%;
+  margin: 0;
+}
+
+.manage-plan lable {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.content {
+  text-align: center;
+  color: #fa4646;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 110px;
+  margin-bottom: 25px;
+}
+
+.manage-plan {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+.manage-plan div {
+  margin: 0;
+  padding-right: 15%;
+  padding-left: 6%;
+}
+
+.manage-plan .Date {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  padding-left: 20px;
+}
+
+.manage-plan .Spot {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.manage-plan .User {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 100%;
+}
+
+.manage-plan .Email {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  width: 100%;
+}
+
+.manage-plan .btn {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+@media only screen and (max-width: 450px) {
+  .manage-plan {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    width: 70%;
+    height: 58vh;
+    margin: 0 1.5%;
+    bottom: 5%;
+  }
+  .manage-plan div {
+    padding: 5%;
+    margin: 0;
+  }
+  .manage-plan .Date {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    width: 100%;
+    padding: 5%;
+  }
+  .manage-plan .Spot {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 100%;
+  }
+  .manage-plan .User {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    width: 100%;
+  }
+  .manage-plan .Email {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    width: 100%;
+  }
+  .manage-plan .btn {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+  }
+  .manage-plan .content {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=page-two.css.map */

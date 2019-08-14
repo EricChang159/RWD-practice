@@ -1,0 +1,91 @@
+
+        #menu  {
+            position:absolute;
+            padding:16px 0 0px 0;
+            top:130px; right:5%;
+            width:600px;
+            height:55px;
+            background:url("http://img.599ku.com/element_psd/97/91/43/44/66affa8b7b0fa4359ef7185961e9a450.jpg");    
+            text-align:center;    
+            box-shadow:3px 2px 2px rgba(53, 53, 145, 1);
+            /* padding: 0 0 40px 0px; */
+                                          
+        }
+        
+        
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color:rgb(219, 219, 219);
+        }
+        a {
+            display:block;
+        }
+    
+        li {
+            list-style:none;
+            width:120px;
+            height:70px;
+            line-height:70px;
+        }
+
+   
+
+    #menu > ul>li>ul>li{
+        list-style:none;
+        height:70px;
+        
+        
+    }
+    /*下方為 第一層 大標*/
+    #menu > ul > li{
+        float:left;
+        position:relative;
+        bottom:14px;
+    }
+
+    #menu >ul >li >ul{
+        position:absolute; 
+        top:60px;
+        
+    }
+    
+    
+    /*動畫開始*/
+
+    #menu > ul> li> ul{
+        visibility:hidden;
+    }
+    #menu > ul> li:hover> ul> li{
+        visibility:visible;
+    }#menu > ul> li> ul> li >ul{
+        visibility:hidden;
+    }
+    #menu >ul >li >ul >li:hover >ul >li{
+        visibility:visible;
+    }
+
+    /*顏色開始*/
+    a{ 
+    
+        color:lightyellow
+    }
+
+    /*變色開始*/
+    #menu>ul>li>ul>li{
+        background:black;
+    }
+
+    #menu >ul>li:hover, #menu>ul>li:hover>ul>li, #menu>ul>li>ul>li>ul>li{
+        opacity:0.9;
+        background:black;
+        padding:0 0 0 0;
+
+
+    }
+
+    #menu > ul > li > ul > li:hover, #menu > ul > li >ul >li > ul >li:hover{
+        opacity:0.8;
+        background:black;
+
+    }

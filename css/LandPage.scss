@@ -1,0 +1,52 @@
+#page-two{
+    position: relative;
+    // width:100vw;
+    top:100vh;
+}
+.container-home{
+    height:100vh;    
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:repeat(6,6fr);
+}
+
+.header{
+    // min-width: 100px;
+    // opacity: 0.7;
+    
+}
+
+.header:nth-child(1){
+    background:#DC3545;
+}
+.header:nth-child(2){
+    background: #ffc107;
+}
+.header:nth-child(3){
+    background: #17A2B8;
+}
+.header:nth-child(4){
+    background:#32ff7e  ;
+}
+.header:nth-child(5){
+    background:#ffcccc
+}
+.header:nth-child(6){
+    background:#ff4d4d
+}
+
+.content-left{
+    grid-row: span 5;
+    grid-column: span 1;
+    background: #ECD149;
+}
+
+.content-right{
+    grid-column:span 5;
+    grid-row:span 5;
+    background:url("http://shop.widgets.gophotoweb.com/storage/shops/28295/products/5630180/images/3-2f31b09ebe24d3a02fc6284a55a8f9a3.jpg");
+    overflow: hidden;
+    /* background-position-x: 0px; */
+}
+
+

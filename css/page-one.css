@@ -1,0 +1,99 @@
+#page-one {
+  margin-bottom: 100x;
+}
+
+.pageone-header-bar {
+  width: 93.3vw;
+  position: fixed;
+  z-index: 999;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0.2em 0.2em 0.2em black;
+  font-weight: bolder;
+  padding: 10px 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.pageone-header-bar .header-icon {
+  display: none;
+}
+
+.pageone-header-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pageone-header-bar ul li {
+  text-align: center;
+}
+
+.pageone-header-bar ul li a {
+  color: white;
+}
+
+.pageone-header-bar ul::before {
+  content: 'BestChoice';
+  line-height: 65px;
+  padding-left: 25px;
+  font-size: 40px;
+  width: 50%;
+}
+
+.break-line {
+  width: inherit;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.break-line .break-line-ball {
+  display: inline-block;
+  background: pink;
+  border: 2px solid pink;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+}
+
+.break-line .break-line-line {
+  width: 90vw;
+  display: inline-block;
+  border-bottom: 2px solid orange;
+}
+
+.pageone-header-bar-change {
+  background: #f7f7f7;
+  color: black;
+  text-shadow: 0.2em 0.2em 0.2em white;
+}
+
+.pageone-header-bar-change .ul-before-change {
+  color: #71b8c0;
+}
+
+.pageone-header-bar-change .a-change {
+  color: black !important;
+}
+
+@media only screen and (max-width: 675px) {
+  .pageone-header-bar li {
+    display: none;
+  }
+  .pageone-header-bar .header-icon {
+    position: absolute;
+    display: inline-block;
+    right: 7%;
+    top: 30%;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 999;
+  }
+}
+/*# sourceMappingURL=page-one.css.map */
