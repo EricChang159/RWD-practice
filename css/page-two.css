@@ -123,7 +123,12 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .black-cover {
+    height: 70vh !important;
+    width: 84.3% !important;
+  }
   .manage-plan {
+    position: relative;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
     -ms-grid-rows: (1fr)[5];

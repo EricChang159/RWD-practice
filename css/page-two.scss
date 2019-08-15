@@ -93,7 +93,13 @@
 }
 
 @media only screen and (max-width:450px){
+    .black-cover{
+        height:70vh!important;
+        width:84.3%!important;
+
+    }
     .manage-plan{
+        position: relative;
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(5, 1fr);
         width:70%;
@@ -101,7 +107,8 @@
         margin:0 1.5%;
         bottom:5%;
         div{
-            padding:5%;margin:0;
+            padding:5%;
+            margin:0;
         }
         .Date{
             grid-row:1/2;
