@@ -15,11 +15,23 @@
   padding: 25px;
   width: 325px;
   height: 375px;
+  z-index: 10;
+}
+
+.manage-plan .black-cover {
+  position: absolute;
   background: black;
-  opacity: .5;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  padding: 25px;
+  width: 325px;
+  height: 375px;
+  z-index: 0;
 }
 
 .manage-plan input {
+  position: relative;
   display: block;
   width: 80%;
   margin: 0;
@@ -29,6 +41,10 @@
   color: white;
   letter-spacing: 2px;
   font-size: 15px;
+}
+
+.manage-plan .btn {
+  position: relative;
 }
 
 .content {

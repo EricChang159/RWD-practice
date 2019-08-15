@@ -11,17 +11,29 @@
     position:relative;
     bottom:10px;
     top:10px;
-    // height:90vh;
     left:5%;
     border:5px solid orangered;
     padding:25px;
     width:325px;
-    // min-width:200px;
     height:375px;
-    // border-radius: 40%;
-    background: black;
-    opacity: .5;
+    z-index:10;
+    // background: black;
+    // opacity: .5;
+    .black-cover{
+        position: absolute;
+        background:black;
+        opacity: 0.6;
+        // bottom:10px;
+        top:0;
+        left:0;
+        // border:5px solid orangered;
+        padding:25px;
+        width:325px;
+        height:375px;
+        z-index:0
+    }
     input{
+        position: relative;
         display:block;
         width:80%;
         margin:0;
@@ -30,6 +42,9 @@
         color:white;
         letter-spacing: 2px;
         font-size: 15px;
+    }
+    .btn{
+        position: relative;
     }
 }
 .content{
