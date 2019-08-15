@@ -101,7 +101,6 @@
     -ms-grid-row: 13;
     -ms-grid-row-span: 4;
     grid-row: 13/17;
-    max-height: 650px;
   }
   .gallery-photobox .gallery-main-content .content {
     font-size: 20px;
@@ -112,8 +111,15 @@
 }
 
 @media only screen and (max-width: 485px) {
+  .gallery-main-content {
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 4;
+    grid-row: 12/16;
+  }
   .gallery-photobox {
     height: 430vh;
+    -ms-grid-rows: (1fr)[15];
+        grid-template-rows: repeat(15, 1fr);
   }
   .gallery-photobox div {
     background-position-x: 50% !important;

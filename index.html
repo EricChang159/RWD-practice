@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./css/page-one.css">
     <link rel="stylesheet" href="./css/page-two.css">
     <link rel="stylesheet" href="./css/pagethree-gallery.css">
+    <link rel="stylesheet" href='./css/footer.css'>
+    <link rel="stylesheet" href='./fontawesome-free-5.10.1-web/css/all.min.css'>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script type="text/javascript" src="./jscode/alljs.js"></script>
 
@@ -27,20 +30,20 @@
                 <div class="PageStart-container">
                     <div class="pageone-header-bar">
                         <ul>
-                            <li class="head-logo"><a href='#'>BestChoice</a></li>
-                            <li class="no-show"><a href="#">Best PLan</a></li>
-                            <li class="no-show"><a href="#">About 675</a></li>
+                            <li class="head-logo"><a href='#page-one'>BestChoice</a></li>
+                            <li class="no-show"><a href="#page-two">Best Plan</a></li>
+                            <li class="no-show"><a href="#">Day tour</a></li>
                             <li class="no-show"><a href="#page-three">Gallery</a></li>
-                            <li class="no-show"><a href="#">Contact</a></li>
+                            <li class="no-show"><a href="#footer">Contact</a></li>
                         </ul>
                         <div class="header-icon"><a href="#">☰</a></div>
                     </div>
                     <div class="mobile-menu">
                         <ul>
-                            <li><a href="#">Best PLan</a></li>
-                            <li><a href="#">About 675</a></li>
+                            <li><a href="#page-two">Best Plan</a></li>
+                            <li><a href="#">About</a></li>
                             <li><a href="#page-three">Gallery</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#footer">Contact</a></li>
                         </ul>
                     </div>
                 <div class="PageStart-content-container">
@@ -67,7 +70,7 @@
         <div id="page-two">
             <div class="page-two-container">
                     <div class="content">Customize your own trip</div>
-
+                    <div class="to-firstPage">▲</div>
                 <div class="manage-plan">
                     <!-- <form> -->
                         <div class="form-group Date">
@@ -133,7 +136,37 @@
                 </div>
             </div>
         </div>
-        <div class="pagefour-footer"></div>
+        <div id="footer">
+            <div class="footer-logo">
+                BestChoice
+            </div>
+
+            <div class="footer-items">
+                <div class="footer-items-group1">
+                    <ul>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">address</a></li>
+                        <li><a href="#">email</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items-group2">
+                    <ul>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">address</a></li>
+                        <li><a href="#">email</a></li>
+                    </ul>
+                </div>
+ 
+            </div>
+            <div class="footer-icon">
+                <i class="fab fa-facebook fa-2x FB"></i>
+                <i class="fab fa-twitter-square fa-2x TW"></i>
+                <i class="fab fa-instagram fa-2x IG"></i>
+                <i class="fab fa-google-plus-square fa-2x GO"></i>
+            </div>
+            
+        </div>
+
         <!-- <div id="page-two">
             <div class="container-home">
                     <div class="header"></div>
@@ -184,19 +217,8 @@
   <style>
   </style>
   <script>
-      $(function(){
-          $('.header-icon').on('click',function(e){
-              e.preventDefault();
-            $('.mobile-menu').toggle(300)
-          })
-            $('.mobile-menu').on('mouseleave',function(e){
-                $('.mobile-menu').hide(300)
-            })       
-      })
-// mouseout 未設置阻止冒泡的false 需要使用mouseleave才可以 兩者差在冒泡與否，事件綁定的層度不同
-          
-     
-     
+
+
 
   </script>
 </html>
