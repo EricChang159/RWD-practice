@@ -5,6 +5,9 @@
     height:290vh;
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows: repeat(12,1fr); 
+    .sm, .middle-photo{
+        cursor: pointer !important;
+    }
     div{
         // border:2px solid pink;
         background-size: cover !important;        
@@ -27,7 +30,7 @@
     }   
     .gallery-main-content{
         position: relative;
-        background:rgb(255, 115, 0);
+        background:#75A5CC;
         grid-column: span 2;
         grid-row: span 6;
         .content{
@@ -114,4 +117,19 @@
             margin:0 0 0 25%;
         }
     }
+}
+
+.size-for-modal{
+    // min-width:100vh;
+    // height:70vh;
+}
+.modal-body-content{
+    
+}
+.modal-img-box{
+    width:70vh;
+    height:70vh;
+    background-size: cover;
+    background-position-y: -120px;
+    align-items: center;
 }

@@ -87,7 +87,6 @@ $(function () {
         } else {
             $toFirstPage.removeClass('show-to-firstPage')
         }
-        console.log(1)
     }, 10))
 })
 // 右下角小按鈕動畫

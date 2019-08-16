@@ -69,9 +69,10 @@
 }
 
 .pageone-header-bar-change {
-  background: #f7f7f7;
+  background: #F6FBFE;
   color: black;
-  text-shadow: 0.2em 0.2em 0.2em white;
+  text-shadow: 0em 0em 0em black;
+  opacity: 1;
 }
 
 .pageone-header-bar-change .ul-before-change {
@@ -98,7 +99,7 @@
 }
 
 .mobile-menu {
-  background: white;
+  background: #DEF3FD;
   position: fixed;
   right: 10px;
   top: 90px;
@@ -126,7 +127,7 @@
 }
 
 .mobile-menu li:hover {
-  background: lightslategray;
+  background: #75A5CC;
 }
 
 .mobile-menu li:hover a {
