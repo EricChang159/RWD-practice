@@ -63,6 +63,7 @@
 @media only screen and (max-width:450px){
     #footer{
         flex-direction: column;
+        position:relative;
     }
     .footer-icon{
         display: flex;

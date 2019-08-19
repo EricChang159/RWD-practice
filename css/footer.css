@@ -84,6 +84,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
   }
   .footer-icon {
     display: -webkit-box;

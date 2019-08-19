@@ -83,7 +83,7 @@
   color: black !important;
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 675px) and (orientation: portrait) {
   .pageone-header-bar .no-show {
     display: none;
   }

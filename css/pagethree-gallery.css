@@ -119,11 +119,15 @@
     -ms-grid-row: 12;
     -ms-grid-row-span: 4;
     grid-row: 12/16;
+    height: 100vh;
   }
   .gallery-photobox {
-    height: 430vh;
+    height: 80vh;
     -ms-grid-rows: (1fr)[15];
         grid-template-rows: repeat(15, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .gallery-photobox div {
     background-position-x: 50% !important;
@@ -139,13 +143,35 @@
   }
 }
 
+.size-for-modal {
+  height: 100vh;
+}
+
+.modal-body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .modal-img-box {
-  width: 70vh;
-  height: 70vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  width: 40vw;
+  height: 60vh;
   background-size: cover;
-  background-position-y: -120px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-position-y: 60%;
+}
+
+@media only screen and (max-width: 380px) {
+  .gallery-main-content {
+    -ms-grid-row: 12;
+    -ms-grid-row-span: 4;
+    grid-row: 12/16;
+    height: 110vh;
+  }
+  .gallery-photobox {
+    height: 110vh;
+  }
 }
 /*# sourceMappingURL=pagethree-gallery.css.map */

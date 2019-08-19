@@ -105,14 +105,14 @@
         <div class="page-three">
             <div  class="page-three-container">
                 <div class="gallery-photobox">
-                    <div class="sm" style="background:url('./image/gallery-photo1.jpeg')" data-imgname="1" data-toggle="modal" data-target="#img-information"></div>
-                    <div class="sm" style="background:url('./image/gallery-photo8.jpeg')" data-imgname="8" data-toggle="modal" data-target="#img-information"></div>
-                    <div class="sm" style="background:url('./image/gallery-photo2.jpeg')" data-imgname="2" data-toggle="modal" data-target="#img-information"></div>
-                    <div class="sm" style="background:url('./image/gallery-photo7.jpeg')" data-imgname="7" data-toggle="modal" data-target="#img-information"></div>
-                    <div class="sm" style="background:url('./image/gallery-photo3.jpeg')" data-imgname="3" data-toggle="modal" data-target="#img-information"></div>
-                    <div class="sm" style="background:url('./image/gallery-photo6.jpeg')" data-imgname="6" data-toggle="modal" data-target="#img-information"></div>
-                    <div class="sm" style="background:url('./image/gallery-photo4.jpeg')" data-imgname="4" data-toggle="modal" data-target="#img-information"></div>
-                    <div class="sm" style="background:url('./image/gallery-photo5.jpeg')" data-imgname="5" data-toggle="modal" data-target="#img-information"></div>
+                    <div class="sm" style="background:url('./image/gallery-photo1.jpeg')" data-image="1"  data-toggle="modal" data-target="#img-information"></div>
+                    <div class="sm" style="background:url('./image/gallery-photo8.jpeg')" data-image="2" data-toggle="modal" data-target="#img-information"></div>
+                    <div class="sm" style="background:url('./image/gallery-photo2.jpeg')" data-image="3" data-toggle="modal" data-target="#img-information"></div>
+                    <div class="sm" style="background:url('./image/gallery-photo7.jpeg')" data-image="4" data-toggle="modal" data-target="#img-information"></div>
+                    <div class="sm" style="background:url('./image/gallery-photo3.jpeg')" data-image="5" data-toggle="modal" data-target="#img-information"></div>
+                    <div class="sm" style="background:url('./image/gallery-photo6.jpeg')" data-image="6" data-toggle="modal" data-target="#img-information"></div>
+                    <div class="sm" style="background:url('./image/gallery-photo4.jpeg')" data-image="7" data-toggle="modal" data-target="#img-information"></div>
+                    <div class="sm" style="background:url('./image/gallery-photo5.jpeg')" data-image="8" data-toggle="modal" data-target="#img-information"></div>
                     <div class="gallery-main-content">
                         <div class="content">
                             <h1>Catch The best Moment</h1>
@@ -136,9 +136,6 @@
                     <div class="middle-photo middle-photo2"></div>
                 </div>
                 <div class="modal-box">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#img-information" data-img="1">
-                        Launch demo modal
-                      </button>
                       
                       <!-- Modal -->
                       <div class="modal fade size-for-modal" id="img-information" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="true">
@@ -150,14 +147,9 @@
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body modal-body">
                               <div class="modal-img-box">
-                                  <!-- <div class="modal-body-content">
-                                      <h1>Si quiere hablar seriamente sobre</h1>
-                                      <p> las 12 constelaciones, puede hablar durante tres días y tres noches, y los argumentos pueden ser diferentes. 
-                                          Angus sugirió que todos para aprender el análisis de la 
-                                          personalidad de la constelación, </p>
-                                  </div> -->
+
                             </div>
                             </div>
                             <div class="modal-footer">
@@ -268,7 +260,7 @@
 
       $('#img-information').on('show.bs.modal', function (event) {
         var buttonImg = $(event.relatedTarget)
-        var recipient = buttonImg.data('imgname')
+        var recipient = buttonImg.data('image')
         var imgSrc = buttonImg.css('background-image')
         // console.log(imgSrc)
         var modal = $(this)

@@ -110,4 +110,4 @@ function throttle(func, settime) {
         }
     }
 }
-// throttle 減少效能浪費 與debounce 一樣功能但是最後會在觸發一次
+// throttle 減少效能浪費 與debounce 一樣功能但不同的是，最後會在觸發一次。
