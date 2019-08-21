@@ -147,7 +147,7 @@
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
-                            <div class="modal-body modal-body">
+                            <div class="modal-body modal-body-container">
                               <div class="modal-img-box">
 
                             </div>
@@ -243,30 +243,16 @@
   <style>
   </style>
   <script>
-      $(function(){
-        $('.gallery-photobox div[data-img]').each((i,a) => {
-            a.on('click',function(){
-                console.log(i)
-            })
-        })
+$('#img-information').on('show.bs.modal', function (event) {
+    var buttonImg = $(event.relatedTarget)
+    var recipient = buttonImg.data('image')
+    var imgSrc = buttonImg.css('background-image')
+    // console.log(imgSrc)
+    var modal = $(this)
+    modal.find('.modal-title').text('Travel Plan' + '\n' + recipient)
+    modal.find('.modal-img-box').css('background-image', imgSrc)
+})
 
-
-        // $('.footer-logo').on('click', function(){
-        //     var x = $('.gallery-photobox div[data-img]')
-        // console.log(x[1])
-        // })
-        
-      })
-
-      $('#img-information').on('show.bs.modal', function (event) {
-        var buttonImg = $(event.relatedTarget)
-        var recipient = buttonImg.data('image')
-        var imgSrc = buttonImg.css('background-image')
-        // console.log(imgSrc)
-        var modal = $(this)
-        modal.find('.modal-title').text('Travel Plan' +'\n'+ recipient)
-        modal.find('.modal-img-box').css('background-image',imgSrc)
-        })
 
   </script>
 </html>

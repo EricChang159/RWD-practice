@@ -111,3 +111,14 @@ function throttle(func, settime) {
     }
 }
 // throttle 減少效能浪費 與debounce 一樣功能但不同的是，最後會在觸發一次。
+
+// $('#img-information').on('show.bs.modal', function (event) {
+//     var buttonImg = $(event.relatedTarget)
+//     var recipient = buttonImg.data('image')
+//     var imgSrc = buttonImg.css('background-image')
+//     // console.log(imgSrc)
+//     var modal = $(this)
+//     modal.find('.modal-title').text('Travel Plan' + '\n' + recipient)
+//     modal.find('.modal-img-box').css('background-image', imgSrc)
+// })
+// 圖片點擊出現modal
