@@ -4,6 +4,7 @@
 
 .pageone-header-bar {
   width: 93.3vw;
+  height: 65px;
   position: fixed;
   z-index: 999;
   color: white;
@@ -31,6 +32,12 @@
 
 .pageone-header-bar ul li a {
   color: white;
+}
+
+.pageone-header-bar ul li:not(.head-logo):hover {
+  border-bottom: 5px solid red;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .pageone-header-bar .head-logo {

@@ -5,7 +5,7 @@
     height:290vh;
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows: repeat(12,1fr); 
-    .sm, .middle-photo{
+    .sm{
         cursor: pointer !important;
     }
     div{
@@ -19,6 +19,8 @@
     .middle-photo{
         grid-column: span 2;
         grid-row: span 3;
+        transition-property: transform;
+        transition-duration: 1.3s
     }
     .middle-photo1{
         background:url('../image/gallery-middle-photo.jpeg');

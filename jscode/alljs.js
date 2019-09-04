@@ -1,3 +1,9 @@
+// var throttleObj = require('./throttle')
+// var throttle = throttleObj.throttle
+// console.log(throttle)
+// 無法使用尚未解決CORS問題
+
+
 $(function () {
     $('.head-logo,.footer-logo').on('click', function () {
         $('html,body').animate({
@@ -87,9 +93,55 @@ $(function () {
         } else {
             $toFirstPage.removeClass('show-to-firstPage')
         }
-    }, 10))
+    }, 400))
 })
 // 右下角小按鈕動畫
+
+$(function () {
+    let $middlePhoto = $('.middle-photo')
+    let $window = $(window)
+    $middlePhoto.css({
+        'transform': 'translateX(600px)',
+        'opacity': '0'
+    })
+    $window.on('scroll', throttle(function () {
+        let photoPosition = $middlePhoto.offset().top
+        let middlePhotoHeight = $middlePhoto.height()
+        let fadeUpPosition = photoPosition - window.innerHeight / 2
+        let fadeDownPosition = photoPosition + window.innerHeight / 2 + middlePhotoHeight / 2
+        if ($window.scrollTop() < fadeDownPosition && $window.scrollTop() > fadeUpPosition) {
+            $middlePhoto.css({
+                'transform': 'translateX(0px)'
+            })
+            $middlePhoto.stop().animate({
+                opacity: 1
+            }, 600)
+        } else {
+            $middlePhoto.css({
+                'transform': 'translateX(600px)'
+            })
+            $middlePhoto.stop().animate({
+                opacity: 0
+            }, 600)
+        }
+    }, 100))
+
+})
+// photo 滑動動畫
+
+
+
+
+// $('#img-information').on('show.bs.modal', function (event) {
+//     var buttonImg = $(event.relatedTarget)
+//     var recipient = buttonImg.data('image')
+//     var imgSrc = buttonImg.css('background-image')
+//     // console.log(imgSrc)
+//     var modal = $(this)
+//     modal.find('.modal-title').text('Travel Plan' + '\n' + recipient)
+//     modal.find('.modal-img-box').css('background-image', imgSrc)
+// })
+// 圖片點擊出現modal
 
 function throttle(func, settime) {
     var last, timer;
@@ -110,15 +162,3 @@ function throttle(func, settime) {
         }
     }
 }
-// throttle 減少效能浪費 與debounce 一樣功能但不同的是，最後會在觸發一次。
-
-// $('#img-information').on('show.bs.modal', function (event) {
-//     var buttonImg = $(event.relatedTarget)
-//     var recipient = buttonImg.data('image')
-//     var imgSrc = buttonImg.css('background-image')
-//     // console.log(imgSrc)
-//     var modal = $(this)
-//     modal.find('.modal-title').text('Travel Plan' + '\n' + recipient)
-//     modal.find('.modal-img-box').css('background-image', imgSrc)
-// })
-// 圖片點擊出現modal

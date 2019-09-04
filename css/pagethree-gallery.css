@@ -9,7 +9,7 @@
       grid-template-rows: repeat(12, 1fr);
 }
 
-.gallery-photobox .sm, .gallery-photobox .middle-photo {
+.gallery-photobox .sm {
   cursor: pointer !important;
 }
 
@@ -24,6 +24,12 @@
 .gallery-photobox .middle-photo {
   grid-column: span 2;
   grid-row: span 3;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1.3s;
+          transition-duration: 1.3s;
 }
 
 .gallery-photobox .middle-photo1 {
