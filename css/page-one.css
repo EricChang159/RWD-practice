@@ -12,8 +12,10 @@
   text-shadow: 0.2em 0.2em 0.2em black;
   font-weight: bolder;
   padding: 10px 5px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition-property: background-color color;
+  transition-property: background-color color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .pageone-header-bar .header-icon {
@@ -36,8 +38,10 @@
 
 .pageone-header-bar ul li:not(.head-logo):hover {
   border-bottom: 5px solid red;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: border-bottom;
+  transition-property: border-bottom;
 }
 
 .pageone-header-bar .head-logo {

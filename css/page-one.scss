@@ -11,8 +11,9 @@
     font-size: 20px;
     text-shadow: 0.2em 0.2em 0.2em black;
     font-weight: bolder;
-    padding:10px 5px;    
-    transition: 1s;
+    padding:10px 5px;
+    transition-property: background-color color;  
+    transition-duration: 1s;
     .header-icon{
         display:none;
     }
@@ -26,7 +27,8 @@
         }
         li:not(.head-logo):hover{
             border-bottom:5px solid red;
-            transition:0.2s;
+            transition-duration:0.2s;
+            transition-property: border-bottom;
         }
         
     }

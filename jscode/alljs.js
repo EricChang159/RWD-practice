@@ -45,7 +45,9 @@ $(function () {
 
     var $ulBefore = $('.pageone-header-bar ul::before')
     var $listLink = $('.pageone-header-bar a')
-    $(window).on('scroll', function () {
+
+    $(window).on('scroll', throttle(function () {
+        console.log('head')
         if ($headerBar.offset().top == firstPosition) {
             $headerBar.removeClass('pageone-header-bar-change')
             $ulBefore.removeClass('ul-before-change')
@@ -59,7 +61,7 @@ $(function () {
         } else {
             return;
         }
-    })
+    }, 100))
 })
 // headbar 樣式更換動畫
 // scroll捲動觸發事件， scrollTop是當下位置，會一直變， offset 是取當下位置.top .left可得值
